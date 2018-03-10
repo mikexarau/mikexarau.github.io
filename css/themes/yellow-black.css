@@ -1,15 +1,15 @@
 /* Theme */
 
 main {
-	background: #FFEB3B;
+	background: #d2ebcd;
 	color: #1E1E1E;
 }
 
 .icons-social a {
-	color: #1E1E1E;
+	color: #393939;
 }
 .icons-social a:hover {
-	color: #fff;
+	color: #ff7f5b;
 }
 
 .icons-social a svg path{
