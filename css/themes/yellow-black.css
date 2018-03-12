@@ -3,6 +3,7 @@
 main {
 	color: #252a34;
 	background: linear-gradient(to bottom right, #eaeaea, white);
+	background: -prefix-linear-gradient(to bottom right, #eaeaea, white);
 }
 
 .icons-social a {
