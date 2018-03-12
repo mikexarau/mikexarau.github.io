@@ -56,8 +56,7 @@ main > .intro {
 	letter-spacing: 0.7rem;
 	border-right: .1em solid black;
 	width: 33ch;
-	width: 26em; 
-    
+	margin:0em 0em;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 2s steps(21, end),
