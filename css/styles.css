@@ -45,7 +45,7 @@ main {
 
 
 
-@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes typing { from { width: 33ch; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 main > .intro {
@@ -54,7 +54,7 @@ main > .intro {
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.7rem;
-	border-right: .1em solid black;
+	border-right: .3em solid black
 	width: 33ch;
 	margin:0em 0em;
     white-space: nowrap;
