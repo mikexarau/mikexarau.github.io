@@ -55,6 +55,7 @@ main > .intro {
 	text-transform: uppercase;
 	letter-spacing: 0.7rem;
 	border-right: .1em solid black;
+	width: 33ch;
     
     white-space: nowrap;
     overflow: hidden;
