@@ -2,7 +2,7 @@
 
 main {
 	color: #252a34;
-	background: radial-gradient(#eaeaea 50%, #ff2e63 5%);
+	background: linear-gradient(to bottom right, #eaeaea, white);
 }
 
 .icons-social a {
