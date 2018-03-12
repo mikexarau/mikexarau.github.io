@@ -49,7 +49,10 @@ main > .intro {
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.7rem;
+	-webkit-animation: typing 2s steps(21, end),
+               blink-caret .5s step-end infinite alternate;
 }
+
 
 main > .tagline {
 	font-size: 1.5rem;
