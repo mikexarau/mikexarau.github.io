@@ -2,7 +2,7 @@
 
 main {
 	color: #252a34;
-	background: radial-gradient(red 5%, yellow 25%, #eaeaea 50%);
+	background: radial-gradient(#eaeaea 50%, red 5%);
 }
 
 .icons-social a {
