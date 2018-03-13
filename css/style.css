@@ -43,8 +43,8 @@ body {
 }
 
 .moon {
-  -webkit-animation: spin 10s linear infinite;
-          animation: spin 10s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
   background: none;
   width: 20px;
   height: 20px;
