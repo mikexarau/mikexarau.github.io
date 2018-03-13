@@ -53,15 +53,15 @@ body {
           transform-origin: 20px;
 }
 .moon img {
-  -webkit-transform: translateX(50px) translateY(50px);
-          transform: translateX(50px) translateY(50px);
-  width: 15px;
+  -webkit-transform: translateX(45px) translateY(45px);
+          transform: translateX(45px) translateY(45px);
+  width: 12.5px;
 }
 
 
 * {
-  -webkit-transition: all 3s cubic-bezier(0, 1.5, 0.3, 1);
-  transition: all 3s cubic-bezier(0, 1.5, 0.3, 1);
+  -webkit-transition: all 2s cubic-bezier(0, 1.5, 0.3, 1);
+  transition: all 2s cubic-bezier(0, 1.5, 0.3, 1);
 }
 
 @-webkit-keyframes spin {
