@@ -78,15 +78,18 @@ main > .tagline {
 	height: 2.65rem;
 }
 /* TOOLTIP */
+
 .tooltip {
   position: relative;
   overflow: hidden;
-  &:hover {
+}
+.tooltip:hover {
     overflow: visible;
+}
     .tooltip-content {
       opacity: 1;
     }
-  }
+ 
   
   .tooltip-content {
     background: white;
@@ -102,7 +105,8 @@ main > .tagline {
     position: absolute;
     opacity: 0;
     transition: all .3s ease;
-    &::after {
+}
+    .tooltip-content::after {
       background: blue;
       content: "";
       height: 10px;
@@ -110,20 +114,20 @@ main > .tagline {
       transform: rotate(45deg);
       width: 10px;
     }
-  }
+ 
   
-  &.top {
-    .tooltip-content {
+  
+    tooltip-content.top.tooltip-content {
       bottom: calc(100% + 1.5em);
       left: 50%;
       transform: translateX(-50%);
-      &::after {
+}
+      tooltip-content.top.tooltip-content::after {
         bottom: -5px;
         left: 50%;
         margin-left: -5px;
       }
-    }
-  }
+  
   
   &.bottom {
     .tooltip-content {
