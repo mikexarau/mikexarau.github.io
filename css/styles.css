@@ -173,7 +173,7 @@ main > .tagline {
 .tooltip:after,
 .tooltip-top:before,
 .tooltip-top:after {
-  bottom: 100%;
+  bottom: 200%;
   left: 50%;
 }
 
