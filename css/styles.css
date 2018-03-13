@@ -77,16 +77,6 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
-/* COLORS */
-$white: #ffffff;
-$gray-light: #cdd2d6;
-$black: #000000;
-$blue: #05a8ff;
-$orange: #ff7033;
-$red: #f7404f;
-$green: #49c562;
-$shadow: rgba(205,210,214,.8);
-
 /* TOOLTIP */
 .tooltip {
   position: relative;
@@ -99,10 +89,10 @@ $shadow: rgba(205,210,214,.8);
   }
   
   .tooltip-content {
-    background: $blue;
-    box-shadow: 0 5px 25px 5px $shadow;
+    background: white;
+    box-shadow: 0 5px 25px 5px;
     box-sizing: border-box;
-    color: $white;
+    color: black;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -113,7 +103,7 @@ $shadow: rgba(205,210,214,.8);
     opacity: 0;
     transition: all .3s ease;
     &::after {
-      background: $blue;
+      background: blue;
       content: "";
       height: 10px;
       position: absolute;
