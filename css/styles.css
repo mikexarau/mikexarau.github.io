@@ -3,6 +3,10 @@
 html {
 	font-family: 'Roboto Mono', monospace;
 }
+p {
+	font-size: 12px;
+	
+}
 
 @media (min-width: 576px) {
 	html {
