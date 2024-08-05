@@ -39,7 +39,7 @@ body {
 .moon-container {
   position: absolute;
   top: calc(50% - 235px);
-  left: calc(50% - 25px);
+  left: calc(52% - 25px);
 }
 
 .moon {
@@ -49,8 +49,8 @@ body {
   width: 20px;
   height: 20px;
   pointer-events: none;
-  -webkit-transform-origin: 20px;
-          transform-origin: 20px;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
 }
 .moon img {
   -webkit-transform: translateX(45px) translateY(45px);
