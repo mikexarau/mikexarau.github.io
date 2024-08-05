@@ -39,7 +39,7 @@ body {
 .moon-container {
   position: absolute;
   top: calc(50% - 235px);
-  left: calc(52% - 25px);
+  left: calc(50% - 0px);
 }
 
 .moon {
