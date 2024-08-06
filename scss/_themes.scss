@@ -1,0 +1,43 @@
+.theme-one {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+  
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+  
+    .intro {
+      color: var(--primary-color);
+    }
+  
+    .tagline {
+      color: var(--secondary-color);
+    }
+  }
+  
+  .theme-one {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+  
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+  
+    .intro {
+      color: var(--primary-color);
+    }
+  
+    .tagline {
+      color: var(--secondary-color);
+    }
+  }
+  
+  // Puedes definir más temas aquí.
+  
+  

@@ -1,0 +1,199 @@
+// Tipografía y Reseteo
+html {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    transition: all 0.3s ease-in-out; // Se ajustó la transición para rendimiento
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  // Estilos Generales
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 25px;
+  }
+  
+  .intro {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+  }
+  
+  .tagline {
+    font-size: 1.3rem;
+    margin: 1.2rem 0;
+    font-weight: 100;
+  }
+  
+  // Estilos para íconos sociales
+  .icons-social i {
+    font-size: 2.2em;
+    padding: 10px;
+  }
+  
+  .icons-social a:hover {
+    color: #ff2e63;
+  }
+  
+  // Estilos específicos de la demo Earth to Moon
+  .earth-demo {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .earth-demo:before {
+    background-size: cover;
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .earth img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200, 0.6);
+    transition: transform 0.4s ease;
+  }
+  
+  .moon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .moon {
+    animation: spin 20s linear infinite;
+    background: none;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    transform-origin: 25px;
+  }
+  
+  .moon img {
+    transform: translateX(-160px) translateY(-160px);
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200, 0.6);
+  }
+  
+  .earth:hover img {
+    transform: translateX(-75px) translateY(-75px) scale(0.5);
+  }
+  
+  .earth:hover ~ .moon-container img {
+    transform: translateX(-140px) translateY(-140px);
+  }
+  
+  // Tooltip Styles
+  [data-tooltip],
+  .tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  [data-tooltip]:before,
+  [data-tooltip]:after,
+  .tooltip:before,
+  .tooltip:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after,
+  .tooltip:hover:before,
+  .tooltip:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tooltip:before,
+  [data-tooltip]:before {
+    z-index: 1001;
+    border: 6px solid transparent;
+    background: transparent;
+    content: "";
+  }
+  
+  .tooltip:after,
+  [data-tooltip]:after {
+    z-index: 1000;
+    padding: 8px;
+    width: 160px;
+    background-color: #000;
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  // Tooltip Directions
+  .tooltip-top:before,
+  .tooltip-top:after {
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tooltip-top:before {
+    border-top-color: #000;
+  }
+  
+  .tooltip-top:hover:before,
+  .tooltip-top:hover:after {
+    transform: translateY(-10px);
+  }
+  
+  // Keyframes
+  @keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
