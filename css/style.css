@@ -52,10 +52,12 @@ body {
   -webkit-transform-origin: 0;
           transform-origin: 0;
 }
+
 .moon img {
   -webkit-transform: translateX(45px) translateY(45px);
           transform: translateX(45px) translateY(45px);
   width: 40px;
+  
 }
 
 
